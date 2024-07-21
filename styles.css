@@ -1,12 +1,15 @@
 body {
     background-color: white;
     color: darkred;
+    font-family: 'Franklin Gothic Medium', 
+        'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin: 0 auto;
 }
 
 h1 {
     font-size: 300%;
+    font-weight: bold;
 }
 
 #container{
