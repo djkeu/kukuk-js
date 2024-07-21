@@ -14,16 +14,6 @@ h1 {
     font-style: italic;
 }
 
-#test-css {
-    margin-top: 20px;
-    color: darkblue
-}
-
-#test-js {
-    margin-top: 40px;
-    color: darkgreen
-}
-
 .clock {
     flex: 1;
     font-size: 30px;
