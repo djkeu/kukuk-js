@@ -1,35 +1,21 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const kukuTime = document.getElementById('kuku_time');
-    
+    const startButton = document.getElementById('startButton');
+    let intervalId;
+
     const updateTime = () => {
         const now = new Date();
         kukuTime.textContent = now.toLocaleTimeString();
     };
 
-    setInterval(updateTime, 1000);
-    updateTime();
-
-    const alarmsCallback = () => {
-        minutelyAlarms();
-        quarterlyAlarms();
-        hourlyAlarms();
-    };
-
-    setInterval(alarmsCallback, 1000 / 11);
-
-    const playKukuSound = (times = 1) => {
-        const audio = new Audio('sounds/keukuk03.wav');
-        let count = 0;
-
-        const playSound = () => {
-            if (count < times) {
-                audio.play();
-                count++;
-                setTimeout(playSound, 1100); // play every 1.1 seconds
-            }
-        };
-
-        playSound();
+    const playKukuSound = async (times = 1) => {
+        for (let i = 0; i < times; i++) {
+            const audio = new Audio('sounds/keukuk03.wav');
+            await audio.play().catch(error => {
+                console.error('Audio playback failed:', error);
+            });
+            await new Promise(resolve => setTimeout(resolve, 1100));
+        }
     };
 
     const minutelyAlarms = () => {
@@ -75,4 +61,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
     };
+
+    const alarmsCallback = () => {
+        minutelyAlarms();
+        quarterlyAlarms();
+        hourlyAlarms();
+    };
+
+    startButton.addEventListener('click', () => {
+        if (!intervalId) {
+            setInterval(updateTime, 1000);
+            intervalId = setInterval(alarmsCallback, 1000 / 11);
+        }
+    });
 });
