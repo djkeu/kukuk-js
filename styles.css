@@ -22,16 +22,6 @@ h1 {
     align-items: center;
 }
 
-.start-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid darkred;
-    border-radius: 5px;
-    color: darkred;
-}
-
 .selector {
     margin-top: 20px;
     padding: 10px;

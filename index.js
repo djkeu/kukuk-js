@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const kukuTime = document.getElementById('kuku_time');
-    const startButton = document.getElementById('startButton');
     const alarmSelector = document.getElementById('alarmSelector');
     let intervalId;
     let audio = new Audio('sounds/keukuk03.wav');
@@ -81,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    startButton.addEventListener('click', () => {
+    alarmSelector.addEventListener('change', () => {
         if (!intervalId) {
             setInterval(updateTime, 1000);
             intervalId = setInterval(alarmsCallback, 1000 / 11);
