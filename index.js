@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             await audio.play().catch(error => {
                 console.error('Audio playback failed:', error);
             });
-            await new Promise(resolve => setTimeout(resolve, 1100)); // Wait for 1.1 seconds
+            await new Promise(resolve => setTimeout(resolve, 1200)); // Wait for 1.2 seconds
         }
 
         isPlaying = false;
