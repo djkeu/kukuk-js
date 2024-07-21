@@ -5,6 +5,19 @@ body {
     margin: 40 auto;
 }
 
+#container{
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    border: 1px solid darkred;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#test-css {
+    color: darkblue
+}
+
 #test-js {
     margin-top: 40px;
+    color: darkgreen
 }
