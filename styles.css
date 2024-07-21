@@ -1,19 +1,21 @@
 body {
-    background-color: beige;
+    background-color: white;
     color: darkred;
     text-align: center;
-    margin: 40 auto;
+    margin: 0 auto;
 }
 
 #container{
-    background-color: #f4f4f4;
-    margin-top: 20px;
+    background-color: beige;
+    margin: 20px;
     border: 1px solid darkred;
     border-radius: 15px;
     padding: 10px;
+    min-height: 300px;
 }
 
 #test-css {
+    margin-top: 20px;
     color: darkblue
 }
 
