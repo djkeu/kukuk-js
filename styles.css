@@ -1,4 +1,10 @@
 body {
     background-color: beige;
     color: darkred;
+    text-align: center;
+    margin: 40 auto;
+}
+
+#test-js {
+    margin-top: 40px;
 }
