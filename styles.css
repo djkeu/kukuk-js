@@ -1,23 +1,14 @@
 body {
-    background-color: white;
-    color: darkred;
-    font-family: 'Franklin Gothic Medium', 
-        'Arial Narrow', Arial, sans-serif;
-    text-align: center;
     margin: 0 auto;
+    padding: 10px;
+    background-color: beige;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 h1 {
     font-size: 300%;
-}
-
-#container{
-    background-color: beige;
-    margin: 20px;
-    border: 1px solid darkred;
-    border-radius: 15px;
-    padding: 10px;
-    min-height: 300px;
 }
 
 #test-css {
