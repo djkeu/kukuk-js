@@ -17,9 +17,11 @@ h1 {
 
 .clock {
     flex: 1;
+    /*
     border: 1px solid darkred;
     border-radius: 5px;
     background-color: whitesmoke;
+    */
     font-size: 30px;
     display: flex;
     justify-content: center;
