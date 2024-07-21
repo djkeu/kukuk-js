@@ -5,6 +5,10 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 300%;
+}
+
 #container{
     background-color: beige;
     margin: 20px;
