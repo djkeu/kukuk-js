@@ -1,12 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const alarmsCallback = () => {
-        minutelyAlarms();
-        quarterlyAlarms();
-        hourlyAlarms();
-    };
-
     const kukuTime = document.getElementById('kuku_time');
     const startButton = document.getElementById('startButton');
+    const alarmSelector = document.getElementById('alarmSelector');
     let intervalId;
     let audio = new Audio('sounds/keukuk03.wav');
     let isPlaying = false;
@@ -72,6 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 playKukuSound(times);
                 console.log(`Hourly alarms sounded ${times} times at: ${currentHourlyTime}.\n`);
             }
+        }
+    };
+
+    const alarmsCallback = () => {
+        const selectedAlarm = alarmSelector.value;
+
+        if (selectedAlarm === 'minutely') {
+            minutelyAlarms();
+        } else if (selectedAlarm === 'quarterly_hourly') {
+            quarterlyAlarms();
+            hourlyAlarms();
         }
     };
 
