@@ -8,7 +8,10 @@ body {
 }
 
 h1 {
-    font-size: 300%;
+    font-family: "Acme", sans-serif;
+    font-size: 400%;
+    font-weight: 900;
+    font-style: italic;
 }
 
 #test-css {
