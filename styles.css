@@ -16,18 +16,31 @@ h1 {
 }
 
 .clock {
-    flex: 1;
-    /*
-    border: 1px solid darkred;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    */
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.kuku-message {
+    font-size: 30px;
+    color: darkred;
+    font-weight: bold;
+    margin-top: 20px;
+    height: 30px; /* Fixed height */
+    visibility: hidden; /* Hidden by default */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+    opacity: 0; /* Hidden by default */
+}
+
+.kuku-message.visible {
+    visibility: visible; /* Make visible */
+    opacity: 1;
 }
 
 .selector {
