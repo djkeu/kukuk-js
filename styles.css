@@ -29,6 +29,7 @@ h1 {
     color: darkred;
     font-weight: bold;
     margin-top: 20px;
+    margin-bottom: 20px;
     height: 30px; /* Fixed height */
     visibility: hidden; /* Hidden by default */
     display: flex;
