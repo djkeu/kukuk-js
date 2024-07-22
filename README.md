@@ -37,8 +37,8 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 Python:\
 Using Kivy framework for GUI\
-Github repository: kukuk_python
+Github repository: https://github.com/djkeu/kukuk_python
 
 Kotlin:\
 Switched to Kotlin for better performance on Android\
-Github repository: kukuk-android
+Github repository: https://github.com/djkeu/kukuk
