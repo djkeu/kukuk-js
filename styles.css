@@ -25,6 +25,7 @@ h1 {
 }
 
 .kuku-message {
+    font-family: "Acme", sans-serif;
     font-size: 30px;
     color: darkred;
     font-weight: bold;
