@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let audio = new Audio('sounds/keukuk03.wav');
     let isPlaying = false;
 
+
     const updateTime = () => {
         const now = new Date();
         kukuTime.textContent = now.toLocaleTimeString();
     };
+
 
     const showKukukMessage = () => {
         return new Promise(resolve => {
@@ -20,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000); // Show for 1000ms
         });
     };
+
 
     const playKukuSound = async (times = 1) => {
         if (isPlaying) return; // Avoid playing multiple sounds at the same time
@@ -35,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isPlaying = false;
     };
 
+
     const minutelyAlarms = () => {
         const now = new Date();
         const currentMinutelyTime = now.toLocaleTimeString('it-IT', { minute: '2-digit', second: '2-digit' });
@@ -49,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+
     const quarterlyAlarms = () => {
         const now = new Date();
         const currentQuarterlyTime = now.toLocaleTimeString('it-IT', { minute: '2-digit', second: '2-digit' });
@@ -59,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(`Quarterly alarm sounded 1 time at: ${now.toLocaleTimeString()}.\n`);
         }
     };
+
 
     const hourlyAlarms = () => {
         const now = new Date();
@@ -73,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+
     const alarmsCallback = () => {
         const selectedAlarm = alarmSelector.value;
 
@@ -83,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hourlyAlarms();
         }
     };
+
 
     alarmSelector.addEventListener('change', () => {
         if (!intervalId) {
