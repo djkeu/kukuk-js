@@ -1,7 +1,7 @@
 # Kukuk
 
 
-### Description
+## Description
 
 Always wanted to own a cuckoo clock but couldn't afford one?
 Well, bless the marvels of the modern world, you can get one on your phone right now. For Free!
@@ -11,7 +11,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 
-### About Kukuk
+## About Kukuk
 
 - Author: Marc Kooij
 - Year of development of JS-version: 2024
@@ -19,7 +19,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 
-### To Do:
+## To Do:
 
 - ToDo: Check what is actually supposed to go in this README.md
 - ToDo: Dark theme
@@ -31,7 +31,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 
-### Abandoned versions
+## Abandoned versions
 
 Python:\
 Using Kivy framework for GUI\
