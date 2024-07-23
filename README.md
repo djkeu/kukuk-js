@@ -23,13 +23,14 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 ## To Do:
 
-- ToDo: Check what is actually supposed to go in this README.md
-- ToDo: Dark theme
-- ToDo: Skins
+- Note: Check what is actually supposed to go in this README.md
+- ToDo: Add menu button
+- ToDo: Dark theme / Skins
 - ToDo: Choice of cuckoo sounds
 - ToDo: The possibility to record your own cuckoo sound
-- ToDo: Toggle the Kuku button on or off
-- ToDo: Toggle quarterly alarms on or off
+- Done: Toggle alarms
+- ToDo: Toggle hourly/quarterly+hourly, not minutely/q+h-ly
+- ToDo: Add width + border to body on large screens
 
 
 
