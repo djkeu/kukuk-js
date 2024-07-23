@@ -49,4 +49,4 @@ Github repository: https://github.com/djkeu/kukuk_python
 
 Kotlin:\
 Switched to Kotlin for better performance on Android\
-Github repository: https://github.com/djkeu/kukuk
+Github repository: https://github.com/djkeu/kukuk-kotlin
