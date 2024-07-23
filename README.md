@@ -26,6 +26,10 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 - Note: Check what is actually supposed to go in this README.md
 - ToDo: Add menu button
+    - Theme
+    - Kuku type
+    - Sound
+    - About
 - ToDo: Dark theme / Skins
 - ToDo: Choice of cuckoo sounds
 - ToDo: The possibility to record your own cuckoo sound
