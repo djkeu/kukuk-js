@@ -22,22 +22,32 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 
+## Files
+- index.html
+- index.js
+- manifest.json
+- README.md
+- styles.css
+- styles-dark.css (not yet implemented)
+
+
+
 ## To Do:
 
 - Note: Check what is actually supposed to go in this README.md
+- ToDo: Add animation
 - ToDo: Add menu button
     - Theme
     - Kuku type
     - Sound
     - About
-- ToDo: Dark theme / Skins
+- ToDo: Dark theme: styles-dark.css
 - ToDo: Choice of cuckoo sounds
 - ToDo: The possibility to record your own cuckoo sound
-- Done: Toggle alarms
-- ToDo: Toggle hourly/quarterly+hourly, not minutely/q+h-ly
+- ToDo: Select hourly/quarterly+hourly, not minutely/q+h-ly
+- Done: Select kukus
 - Done: Add border to body on large screens
-- ToDo: Consider name change to Kuku
-- ToDo: Add animation
+- Done: Consider name change to Kuku
 
 
 
