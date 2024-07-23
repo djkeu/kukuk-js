@@ -18,7 +18,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Year of development of JS-version: 2024
 - e-mail: post@djkeu.nl
 - Github: https://github.com/djkeu/kukuk-js
-- Netlify: https://kukuk-klok.netlify.app/
+- Netlify: https://kuku-klok.netlify.app/
 
 
 
