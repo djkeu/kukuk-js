@@ -35,6 +35,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 ## To Do:
 
 - Note: Check what is actually supposed to go in this README.md
+- ToDo: Favicon
 - ToDo: Add animation
 - ToDo: Add menu button
     - Theme
