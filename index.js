@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    const showKukukMessage = () => {
+    const showKukuMessage = () => {
         return new Promise(resolve => {
             kukuMessage.classList.add('visible'); // Show message
             setTimeout(() => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < times; i++) {
             audio.currentTime = 0; // Reset the audio to the start
             await audio.play().catch(error => console.error('Audio playback failed:', error));
-            await showKukukMessage(); // Show Kukuk message and wait for it to finish
+            await showKukuMessage(); // Show Kukuk message and wait for it to finish
             await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kukuk
         }
 
