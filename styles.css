@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     padding: 10px;
+    padding-top: 0px;
     padding-bottom: 40px;
     background-color: beige;
     border: 1px solid darkred;
@@ -24,6 +25,8 @@ h1 {
     font-size: 60px;
     font-weight: bold;
     font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .clock {
@@ -39,14 +42,14 @@ h1 {
     font-weight: bold;
     font-style: italic;
     color: darkred;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     height: 120px; /* Fixed height */
     display: flex;
     justify-content: center;
     align-items: center;
     /*transition: opacity 0.3s ease;*/ /* Smooth opacity transition */
-    background: url('images/kukua02.png') no-repeat center center; /* Add background image */
+    background: url('images/kukua02.png') no-repeat center center;
     background-size: contain;
     visibility: visible;
     opacity: 1;
