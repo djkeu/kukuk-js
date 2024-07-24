@@ -35,20 +35,24 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 ## To Do:
 
 - Note: Check what is actually supposed to go in this README.md
-- Done: Favicon
-- Done: Add animation
+
 - ToDo: Add menu button
     - Theme
     - Kuku type
     - Sound
+    - Mute sound
     - About
 - ToDo: Dark theme: styles-dark.css
 - ToDo: Choice of cuckoo sounds
+- ToDo: Possibility to mute sound
 - ToDo: The possibility to record your own cuckoo sound
 - ToDo: Select hourly/quarterly+hourly, not minutely/q+h-ly
+
 - Done: Select kukus
 - Done: Add border to body on large screens
 - Done: Consider name change to Kuku
+- Done: Favicon
+- Done: Add animation
 
 
 
