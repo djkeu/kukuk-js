@@ -13,9 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showKukuMessage = () => {
         return new Promise(resolve => {
+            kukuMessage.innerText = 'Kuku!'; // Show message text
             kukuMessage.classList.add('visible'); // Show message
             setTimeout(() => {
                 kukuMessage.classList.remove('visible'); // Hide message
+                kukuMessage.innerText = ''; // Hide message text
                 resolve();
             }, 1000); // Show for 1000ms
         });
@@ -28,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < times; i++) {
             audio.currentTime = 0; // Reset the audio to the start
             await audio.play().catch(error => console.error('Audio playback failed:', error));
-            await showKukuMessage(); // Show Kukuk message and wait for it to finish
-            await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kukuk
+            await showKukuMessage(); // Show Kuku message and wait for it to finish
+            await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kuku
         }
 
         isPlaying = false;
