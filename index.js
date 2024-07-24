@@ -13,30 +13,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showKukuMessage = () => {
         return new Promise(resolve => {
-            kukuMessage.innerText = 'Kuku !'; // Show message text
-            kukuMessage.classList.add('visible'); // Show message
+            const kukuText = kukuMessage.querySelector('span');
+            kukuText.style.visibility = 'visible';
+            kukuText.style.opacity = '1'; // Show text
             setTimeout(() => {
-                kukuMessage.classList.remove('visible'); // Hide message
-                kukuMessage.innerText = ''; // Hide message text
+                kukuText.style.visibility = 'hidden';
+                kukuText.style.opacity = '0'; // Hide text
                 resolve();
             }, 1000); // Show for 1000ms
         });
     };
-
+    
     const playKukuSound = async (times = 1) => {
         if (isPlaying) return; // Avoid playing multiple sounds at the same time
         isPlaying = true;
-
+    
+        const kukuImage = kukuMessage.querySelector('.kuku-image');
+        kukuImage.style.display = 'none'; // Hide image
+    
         for (let i = 0; i < times; i++) {
             audio.currentTime = 0; // Reset the audio to the start
             await audio.play().catch(error => console.error('Audio playback failed:', error));
-            await showKukuMessage(); // Show Kuku message and wait for it to finish
-            await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kuku
+            await showKukuMessage(); // Show Kukuk message and wait for it to finish
+            await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kukuk
         }
-
+    
+        kukuImage.style.display = 'block'; // Show image
+    
         isPlaying = false;
     };
-
+        
     const minutelyAlarms = () => {
         const now = new Date();
         const currentMinutelyTime = now.toLocaleTimeString('it-IT', { minute: '2-digit', second: '2-digit' });

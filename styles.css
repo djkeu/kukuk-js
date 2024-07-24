@@ -42,21 +42,36 @@ h1 {
     font-weight: bold;
     font-style: italic;
     color: darkred;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    height: 120px; /* Fixed height */
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: 100px; /* Adjust height if needed */
     display: flex;
     justify-content: center;
     align-items: center;
-    /*transition: opacity 0.3s ease;*/ /* Smooth opacity transition */
-    background: url('images/kukua02.png') no-repeat center center;
-    background-size: contain;
-    visibility: visible;
-    opacity: 1;
+    position: relative;
+    overflow: hidden;
 }
 
-.kuku-message.visible {
-    background: none; /* Remove the background image when visible */
+.kuku-message span {
+    visibility: hidden; /* Hide text by default */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.kuku-image {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: contain; /* Ensure the image fits inside the container without distortion */
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.kuku-message.visible span {
+    visibility: visible; /* Show text when message is visible */
+    opacity: 1;
+    position: relative; /* Ensure text is positioned correctly */
+    z-index: 1; /* Ensure text appears above the image */
 }
 
 .selector {
