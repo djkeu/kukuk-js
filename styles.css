@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    margin-top: 10px;
     padding: 10px;
     padding-bottom: 40px;
     background-color: beige;
@@ -14,6 +15,7 @@ body {
 @media only screen and (max-width: 800px) {
     body {
         border: none;
+        margin-top: 0px;
     }
 }
 
