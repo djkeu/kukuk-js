@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const showKukuMessage = () => {
         return new Promise(resolve => {
-            kukuMessage.innerText = 'Kuku!'; // Show message text
+            kukuMessage.innerText = 'Kuku !'; // Show message text
             kukuMessage.classList.add('visible'); // Show message
             setTimeout(() => {
                 kukuMessage.classList.remove('visible'); // Hide message
