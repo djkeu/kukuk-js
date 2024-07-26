@@ -93,18 +93,12 @@ h3 {
 .menu-container {
     position: absolute;
     top: 10px;
+    right: 10px;
 }
 
 .back-container {
     position: absolute;
     top: 0px;
-}
-
-.menu-container {
-    right: 10px;
-}
-
-.back-container {
     left: 10px;
 }
 
@@ -127,12 +121,14 @@ h3 {
     color: darkred;
 }
 
+/*
 .mute-button {
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
 }
+*/
 
 .about-section {
     margin-top: 40px;
