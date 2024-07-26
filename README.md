@@ -36,8 +36,9 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 - Note: Check what is actually supposed to go in this README.md
 
-- ToDo: Select hourly/quarterly+hourly, not minutely/q+h-ly
+- ToDo: Improve drawing of the kuku clock
 
+- Done: Select hourly/quarterly+hourly, not minutely/q+h-ly
 - Done: Select kukus
 - Done: Add border to body on large screens
 - Done: Consider name change to Kuku
