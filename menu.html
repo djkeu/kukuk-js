@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Back Button -->
+    <div class="back-container">
+        <a href="index.html" class="back-button">&larr;</a>
+    </div>
+
+    <h1>Menu</h1>
+
+    <div class="menu-item">
+        <label for="theme-selector">Theme:</label>
+        <select id="theme-selector" class="selector">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+
+    <div class="menu-item">
+        <label for="kuku-selector">Kuku Type:</label>
+        <select id="kuku-selector" class="selector">
+            <option value="minutely">Minutely Kukus</option>
+            <option value="quarterly_hourly">Quarterly and Hourly Kukus</option>
+        </select>
+    </div>
+
+    <div class="menu-item">
+        <button id="mute-button" class="mute-button">🔊</button>
+    </div>
+
+    <div class="menu-item about-section" id="about-section">
+        <!-- About information will be loaded here -->
+    </div>
+
+    <script type="module" src="menu.js"></script>
+</body>
+</html>

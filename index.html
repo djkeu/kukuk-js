@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Kuku</title>
     <meta charset="UTF-8">
@@ -17,28 +16,26 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>
-        Kuku
-    </h1>
+    <h1>Kuku</h1>
     
-    <div id="kuku_time" class="clock">
-        00:00:00
-    </div>
-
+    <div id="kuku_time" class="clock">00:00:00</div>
     <div id="kuku_message" class="kuku-message">
         <span>Kuku!</span>
         <img src="images/kukua02.png" alt="Kuku Image" class="kuku-image">
     </div>
-        
+    
     <select id="alarmSelector" class="selector">
         <option value="none" disabled selected>Select Kukus</option>
         <option value="minutely">Minutely Kukus</option>
         <option value="quarterly_hourly">Quarterly and Hourly Kukus</option>
     </select>
 
+    <!-- Menu Button -->
+    <div class="menu-container">
+        <a href="menu.html" class="menu-button">⋮</a>
+    </div>
+
     <script type="module" src="index.js"></script>
 </body>
-
 </html>
