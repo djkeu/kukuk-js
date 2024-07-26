@@ -89,6 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (selectedAlarm === 'quarterly_hourly') {
             quarterlyAlarms();
             hourlyAlarms();
+        } else if (selectedAlarm === 'hourly') {
+            hourlyAlarms();
         }
     };
 
