@@ -23,6 +23,9 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 ## Files
+- about.html
+- about.js
+- about.json
 - index.html
 - index.js
 - manifest.json
