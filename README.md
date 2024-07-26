@@ -31,7 +31,6 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - manifest.json
 - README.md
 - styles.css
-- styles-dark.css (not yet implemented)
 
 
 
