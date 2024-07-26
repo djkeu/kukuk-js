@@ -32,6 +32,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+h3 {
+    margin-top: 20px;
+}
+
 .clock {
     font-size: 30px;
     display: flex;
@@ -86,9 +90,14 @@ h1 {
     background-color: whitesmoke;
 }
 
-.menu-container, .back-container {
+.menu-container {
     position: absolute;
     top: 10px;
+}
+
+.back-container {
+    position: absolute;
+    top: 0px;
 }
 
 .menu-container {
