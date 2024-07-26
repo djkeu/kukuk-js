@@ -1,5 +1,7 @@
 # Kukuk
 
+- Note: Check what is actually supposed to go in this README.md
+
 
 ## Description
 
@@ -28,18 +30,25 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - about.json
 - index.html
 - index.js
-- manifest.json
+- package.json
 - README.md
 - styles.css
+- vite.config.js
+- ./images/android-chrome-192x192.png
+- ./images/android-chrome-512x512.png
+- ./images/apple-touch-icon.png
+- ./images/favicon.ico
+- ./images/favicon-16x16.png
+- ./images/favicon-32x32.png
+- ./images/kukua06.png
+- ./images/site.webmanifest
+- ./sounds/keukuk03.wav
 
 
 
 ## To Do:
 
-- Note: Check what is actually supposed to go in this README.md
-
-- ToDo: Improve drawing of the kuku clock
-
+- Done: Improve drawing of the kuku clock
 - Done: Move favicons to ./images/
 - Done: Select hourly/quarterly+hourly, not minutely/q+h-ly
 - Done: Select kukus
