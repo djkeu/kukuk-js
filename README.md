@@ -36,7 +36,6 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 - Note: Check what is actually supposed to go in this README.md
 
-- ToDo: Set background kuku-message to empty
 - ToDo: Add menu button
     - Theme
     - Kuku type
@@ -54,6 +53,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Done: Consider name change to Kuku
 - Done: Favicon
 - Done: Add animation
+- Done: Set background kuku-message to empty
 
 
 
