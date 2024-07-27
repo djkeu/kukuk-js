@@ -23,46 +23,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000); // Show for 1000ms
         });
     };
-    
+
     const playKukuSound = async (times = 1) => {
         if (isPlaying) return; // Avoid playing multiple sounds at the same time
         isPlaying = true;
-    
+
         const kukuImage = kukuMessage.querySelector('.kuku-image');
         kukuImage.style.display = 'none'; // Hide image
-    
+
         for (let i = 0; i < times; i++) {
             audio.currentTime = 0; // Reset the audio to the start
             await audio.play().catch(error => console.error('Audio playback failed:', error));
             await showKukuMessage(); // Show Kukuk message and wait for it to finish
             await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kukuk
         }
-    
+
         kukuImage.style.display = 'block'; // Show image
-    
+
         isPlaying = false;
     };
-        
+
     const minutelyAlarms = () => {
         const now = new Date();
-        const currentMinutelyTime = now.toLocaleTimeString('it-IT', { minute: '2-digit', second: '2-digit' });
+        const currentSecond = now.getSeconds();
+        const currentMinute = now.getMinutes();
 
-        for (let i = 1; i < 60; i++) {
-            let minute = `${String(i).padStart(2, '0')}:00`;
-            if (currentMinutelyTime === minute) {
-                let times = i < 11 ? i : (i < 21 ? i - 10 : (i < 31 ? i - 20 : (i < 41 ? i - 30 : (i < 51 ? i - 40 : i - 50))));
-                playKukuSound(times);
-                console.log(`Minutely alarm sounded ${times} time(s) at: ${now.toLocaleTimeString()}.\n`);
-            }
+        if (currentSecond === 0) {
+            const lastDigit = currentMinute % 10;
+            const times = lastDigit === 0 ? 10 : lastDigit;
+            playKukuSound(times);
+            console.log(`Minutely alarm sounded ${times} time(s) at: ${now.toLocaleTimeString()}.\n`);
         }
     };
 
     const quarterlyAlarms = () => {
         const now = new Date();
-        const currentQuarterlyTime = now.toLocaleTimeString('it-IT', { minute: '2-digit', second: '2-digit' });
+        const currentSecond = now.getSeconds();
+        const currentMinute = now.getMinutes();
 
-        const alarms = ["15:00", "30:00", "45:00"];
-        if (alarms.includes(currentQuarterlyTime)) {
+        if (currentSecond === 0 && [15, 30, 45].includes(currentMinute)) {
             playKukuSound(1);
             console.log(`Quarterly alarm sounded 1 time at: ${now.toLocaleTimeString()}.\n`);
         }
@@ -70,14 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hourlyAlarms = () => {
         const now = new Date();
-        const currentHourlyTime = now.toLocaleTimeString('it-IT');
+        const currentSecond = now.getSeconds();
+        const currentMinute = now.getMinutes();
+        const currentHour = now.getHours();
 
-        for (let i = 0; i < 24; i++) {
-            let hour = `${String(i).padStart(2, '0')}:00:00`;
-            if (hour === currentHourlyTime) {
-                playKukuSound(i === 0 ? 12 : (i < 13 ? i : (i - 12)));
-                console.log(`Hourly alarm sounded ${i === 0 ? 12 : (i < 13 ? i : (i - 12))} times at: ${now.toLocaleTimeString()}.\n`);
-            }
+        if (currentSecond === 0 && currentMinute === 0) {
+            const times = (currentHour % 12) || 12;
+            playKukuSound(times);
+            console.log(`Hourly alarm sounded ${times} time(s) at: ${now.toLocaleTimeString()}.\n`);
         }
     };
 
@@ -100,12 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check if a selector option is already chosen and start the alarms if so
     if (alarmSelector.value !== 'none') {
-        intervalId = setInterval(alarmsCallback, 1000 / 11);
+        intervalId = setInterval(alarmsCallback, 1000);
     }
 
     alarmSelector.addEventListener('change', () => {
-        if (!intervalId) {
-            intervalId = setInterval(alarmsCallback, 1000 / 11);
+        if (intervalId) {
+            clearInterval(intervalId);
         }
+        intervalId = setInterval(alarmsCallback, 1000);
     });
 });
