@@ -1,4 +1,4 @@
-// menu.js
+// about.js
 
 // Function to load about information from about.json
 async function loadAboutInfo() {
@@ -12,9 +12,13 @@ async function loadAboutInfo() {
         
         // Assuming about.json contains an object with key-value pairs
         for (const key in data) {
-            const p = document.createElement('p');
-            p.textContent = `${key}: ${data[key]}`;
-            aboutSection.appendChild(p);
+            const keyElement = document.createElement('h4');
+            keyElement.textContent = key;
+            aboutSection.appendChild(keyElement);
+
+            const valueElement = document.createElement('p');
+            valueElement.textContent = data[key];
+            aboutSection.appendChild(valueElement);
         }
     } catch (error) {
         console.error('Error fetching or parsing about.json:', error);
@@ -23,4 +27,3 @@ async function loadAboutInfo() {
 
 // Call the function to load about information
 loadAboutInfo();
-
