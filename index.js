@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const kukuMessage = document.getElementById('kuku_message');
     const alarmSelector = document.getElementById('alarmSelector');
     let intervalId;
-    let audio = new Audio('sounds/keukuk03.wav');
+    let audio = new Audio('sounds/keukuk03.mp3');
     let isPlaying = false;
 
     const updateTime = () => {
