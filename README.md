@@ -49,24 +49,24 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 ## Done and abondoned
-- Done: Improve drawing of the kuku clock
-- Done: Move favicons to ./images/
-- Done: Select hourly/quarterly+hourly, not minutely/q+h-ly
-- Done: Select kukus
-- Done: Add border to body on large screens
-- Done: Consider name change to Kuku
-- Done: Favicon
-- Done: Add animation
-- Done: Set background kuku-message to empty
-- Done: Add menu button
-    - Abandoned: Theme
-    - Abandoned: Kuku type
-    - Abandoned: Mute sound
-    - Done:About
+- Improve drawing of the kuku clock
+- Move favicons to ./images/
+- Select hourly/quarterly+hourly, not minutely/q+h-ly
+- Select kukus
+- Add border to body on large screens
+- Consider name change to Kuku
+- Favicon
+- Add animation
+- Set background kuku-message to empty
+- Add menu button
+    - About
+    - ToDo: Dark theme
 
-- Abandoned: Possibility to mute sound
-- Abandoned: The possibility to record your own cuckoo sound
-- Abandoned: Choice of cuckoo sounds
+
+## Abandoned
+- Possibility to mute sound
+- The possibility to record your own cuckoo sound
+- Choice of cuckoo sounds
 
 
 ## Abandoned versions
