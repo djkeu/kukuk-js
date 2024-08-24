@@ -17,6 +17,9 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Dark theme
 - Show bird when kuku-ing
 - Analogue clock inside drawing
+- Menu button
+    - Done: About
+    - ToDo: Dark theme
 
 
 ## About Kuku
@@ -48,29 +51,6 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - ./images/kukua06.png
 - ./images/site.webmanifest
 - ./sounds/keukuk03.wav
-
-
-## Done
-
-- Improve drawing of the kuku clock
-- Move favicons to ./images/
-- Select hourly/quarterly+hourly, not minutely/q+h-ly
-- Select kukus
-- Add border to body on large screens
-- Consider name change to Kuku
-- Favicon
-- Add animation
-- Set background kuku-message to empty
-- Add menu button
-    - About
-    - ToDo: Dark theme
-
-
-## Abandoned
-
-- Possibility to mute sound
-- The possibility to record your own cuckoo sound
-- Choice of cuckoo sounds
 
 
 ## Abandoned versions
