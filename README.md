@@ -49,6 +49,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 ## Done
+
 - Improve drawing of the kuku clock
 - Move favicons to ./images/
 - Select hourly/quarterly+hourly, not minutely/q+h-ly
@@ -64,6 +65,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 
 ## Abandoned
+
 - Possibility to mute sound
 - The possibility to record your own cuckoo sound
 - Choice of cuckoo sounds
@@ -78,4 +80,3 @@ Github repository: https://github.com/djkeu/kukuk_python
 #### Kotlin:
 Switched to Kotlin for better performance on Android\
 Github repository: https://github.com/djkeu/kukuk-kotlin
-
