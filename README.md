@@ -31,27 +31,6 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Netlify: https://kuku-klok.netlify.app/
 
 
-## Files
-- about.html
-- about.js
-- about.json
-- index.html
-- index.js
-- package.json
-- README.md
-- styles.css
-- vite.config.js
-- ./images/android-chrome-192x192.png
-- ./images/android-chrome-512x512.png
-- ./images/apple-touch-icon.png
-- ./images/favicon.ico
-- ./images/favicon-16x16.png
-- ./images/favicon-32x32.png
-- ./images/kukua06.png
-- ./images/site.webmanifest
-- ./sounds/keukuk03.wav
-
-
 ## Abandoned versions
 
 #### Python:
