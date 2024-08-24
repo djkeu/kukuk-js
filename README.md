@@ -12,7 +12,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 ## ToDo:
 
-- What's new in this update
+- User notification about What's new
 - Dark theme
 - Show bird when kuku-ing
 - Analogue clock inside drawing
