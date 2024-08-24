@@ -38,7 +38,6 @@ h4 {
     margin-bottom: -10px;
 }
 
-
 .clock {
     font-size: 30px;
     display: flex;
@@ -54,7 +53,7 @@ h4 {
     color: darkred;
     margin-top: 40px;
     margin-bottom: 60px;
-    height: 180px;
+    height: 250px; /* Adjust based on desired image size */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -70,10 +69,12 @@ h4 {
 }
 
 .kuku-image {
-    max-width: 100%; /* Make the image fill the container */
-    max-height: 100%; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits inside the container without distortion */
-    position: absolute; /* Position the image absolutely within the container */
+    width: 100%;  /* Ensure the image fills the container */
+    height: auto;  /* Maintain aspect ratio */
+    max-width: 250px;  /* Set a maximum width to avoid overflow */
+    max-height: 100%;  /* Ensure the image does not exceed container height */
+    object-fit: contain;  /* Maintain aspect ratio within the container */
+    position: absolute;  /* Position the image within the container */
 }
 
 .kuku-message.visible span {

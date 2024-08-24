@@ -5,15 +5,40 @@ document.addEventListener('DOMContentLoaded', () => {
     let intervalId;
     let audio = new Audio('sounds/keukuk03.mp3');
     let isPlaying = false;
+    let alternateImages = false;
+    let imageIntervalId;
 
+    // Define image paths
+    const kukuImages = {
+        left: 'images/kukua09Left.png',
+        right: 'images/kukua09Right.png'
+    };
+
+    // Function to update the time
     const updateTime = () => {
         const now = new Date();
         kukuTime.textContent = now.toLocaleTimeString();
     };
 
+    // Function to alternate images every second
+    const toggleImages = () => {
+        if (!isPlaying) {  // Only toggle if not playing sound
+            const kukuImage = kukuMessage.querySelector('.kuku-image');
+            alternateImages = !alternateImages;
+            kukuImage.src = alternateImages ? kukuImages.left : kukuImages.right;
+            kukuImage.style.display = 'block'; // Ensure the image is visible
+        }
+    };
+
+    // Function to show the Kuku message
     const showKukuMessage = () => {
         return new Promise(resolve => {
             const kukuText = kukuMessage.querySelector('span');
+            const kukuImage = kukuMessage.querySelector('.kuku-image');
+
+            // Temporarily hide the image and show the text
+            clearInterval(imageIntervalId); // Stop image alternation
+            kukuImage.style.display = 'none';
             kukuText.style.visibility = 'visible';
             kukuText.style.opacity = '1'; // Show text
             setTimeout(() => {
@@ -24,25 +49,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Function to play the Kuku sound
     const playKukuSound = async (times = 1) => {
         if (isPlaying) return; // Avoid playing multiple sounds at the same time
         isPlaying = true;
 
         const kukuImage = kukuMessage.querySelector('.kuku-image');
-        kukuImage.style.display = 'none'; // Hide image
+        kukuImage.style.display = 'none'; // Hide image during sound play
 
         for (let i = 0; i < times; i++) {
             audio.currentTime = 0; // Reset the audio to the start
             await audio.play().catch(error => console.error('Audio playback failed:', error));
-            await showKukuMessage(); // Show Kukuk message and wait for it to finish
-            await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kukuk
+            await showKukuMessage(); // Show Kuku message and wait for it to finish
+            await new Promise(resolve => setTimeout(resolve, 200)); // Wait for 200ms before the next Kuku
         }
 
-        kukuImage.style.display = 'block'; // Show image
-
-        isPlaying = false;
+        isPlaying = false;  // End sound play
+        kukuImage.style.display = 'block'; // Ensure the image is visible
+        imageIntervalId = setInterval(toggleImages, 1000); // Resume image alternation
     };
 
+    // Minutely alarms
     const minutelyAlarms = () => {
         const now = new Date();
         const currentSecond = now.getSeconds();
@@ -56,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Quarterly alarms
     const quarterlyAlarms = () => {
         const now = new Date();
         const currentSecond = now.getSeconds();
@@ -67,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Hourly alarms
     const hourlyAlarms = () => {
         const now = new Date();
         const currentSecond = now.getSeconds();
@@ -80,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Alarms callback
     const alarmsCallback = () => {
         const selectedAlarm = alarmSelector.value;
 
@@ -96,6 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start updating the time immediately
     updateTime();
     setInterval(updateTime, 1000);
+
+    // Start alternating images every second
+    imageIntervalId = setInterval(toggleImages, 1000);
 
     // Check if a selector option is already chosen and start the alarms if so
     if (alarmSelector.value !== 'none') {
