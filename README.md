@@ -1,6 +1,4 @@
-# Kukuk
-
-- Note: Check what is actually supposed to go in this README.md
+# Kuku - a digital cuckoo clock for pc and phone
 
 
 ## Description
@@ -12,6 +10,31 @@ Kukuk is an app that mimics a cuckoo-clock, written in JavaScript.
 A cuckoo sound is played once every 15 minutes and multiple times according to the hour of the day.
 
 
+## To Do:
+
+- ToDo: What's new in this update 
+- Todo: Tick tock
+
+- Done: Improve drawing of the kuku clock
+- Done: Move favicons to ./images/
+- Done: Select hourly/quarterly+hourly, not minutely/q+h-ly
+- Done: Select kukus
+- Done: Add border to body on large screens
+- Done: Consider name change to Kuku
+- Done: Favicon
+- Done: Add animation
+- Done: Set background kuku-message to empty
+- Done: Add menu button
+    - Abandoned: Theme
+    - Abandoned: Kuku type
+    - Abandoned: Mute sound
+    - Done:About
+
+- Abandoned: Dark theme: styles-dark.css
+- Abandoned: Possibility to mute sound
+- Abandoned: The possibility to record your own cuckoo sound
+- Abandoned: Choice of cuckoo sounds
+
 
 ## About Kukuk
 
@@ -21,7 +44,6 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - e-mail: post@djkeu.nl
 - Github: https://github.com/djkeu/kukuk-js
 - Netlify: https://kuku-klok.netlify.app/
-
 
 
 ## Files
@@ -45,32 +67,6 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - ./sounds/keukuk03.wav
 
 
-
-## To Do:
-
-- ToDo: What's new in this update 
-- Todo: Tick tock 
-- Done: Improve drawing of the kuku clock
-- Done: Move favicons to ./images/
-- Done: Select hourly/quarterly+hourly, not minutely/q+h-ly
-- Done: Select kukus
-- Done: Add border to body on large screens
-- Done: Consider name change to Kuku
-- Done: Favicon
-- Done: Add animation
-- Done: Set background kuku-message to empty
-- Done: Add menu button
-    - Abandoned: Theme
-    - Abandoned: Kuku type
-    - Abandoned: Mute sound
-    - Done:About
-- Abandoned: Dark theme: styles-dark.css
-- Abandoned: Possibility to mute sound
-- Abandoned: The possibility to record your own cuckoo sound
-- Abandoned: Choice of cuckoo sounds
-
-
-
 ## Abandoned versions
 
 Python:\
@@ -80,3 +76,4 @@ Github repository: https://github.com/djkeu/kukuk_python
 Kotlin:\
 Switched to Kotlin for better performance on Android\
 Github repository: https://github.com/djkeu/kukuk-kotlin
+
