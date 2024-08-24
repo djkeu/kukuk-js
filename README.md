@@ -19,10 +19,10 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Analogue clock inside drawing
 
 
-## About Kukuk
+## About Kuku
 
 - Author: Marc Kooij
-- Name program: Kukuk
+- Name program: Kuku
 - Year of development of JS-version: 2024
 - e-mail: post@djkeu.nl
 - Github: https://github.com/djkeu/kukuk-js
