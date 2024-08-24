@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define image paths
     const kukuImages = {
-        left: 'images/kukua09Left.png',
-        right: 'images/kukua09Right.png'
+        left: 'images/kuku10Left.png',
+        right: 'images/kuku10Right.png'
     };
 
     // Function to update the time
