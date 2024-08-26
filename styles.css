@@ -137,25 +137,24 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     z-index: 1000;
 }
 
 #startButton {
-    padding: 20px 40px;
-    font-size: 24px;
-    cursor: pointer;
     background-color: darkred;
     color: white;
+    font-size: 24px;
+    padding: 15px 30px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     position: relative;
-    top: -100px; /* Move the button upwards to align with the image's center */
+    top: -14%; /* Move the button upwards relative to its centered position */
 }
 
 #startButton:hover {
