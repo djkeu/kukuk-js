@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const kukuTime = document.getElementById('kuku_time');
     const kukuMessage = document.getElementById('kuku_message');
     const alarmSelector = document.getElementById('alarmSelector');
+    const startScreen = document.getElementById('startScreen');
+    const startButton = document.getElementById('startButton');
     let intervalId;
     let audio = new Audio('sounds/keukuk03.mp3');
     let isPlaying = false;
@@ -130,11 +132,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start alternating images every second
     imageIntervalId = setInterval(toggleImages, 1000);
 
-    // Check if a selector option is already chosen and start the alarms if so
-    if (alarmSelector.value !== 'none') {
-        intervalId = setInterval(alarmsCallback, 1000);
-    }
+    // Handle Start Kuku button click
+    startButton.addEventListener('click', () => {
+        startScreen.style.display = 'none'; // Hide the start screen
 
+        // Set the alarm mode to "Hours and fifteen minutes" by default
+        alarmSelector.value = 'quarterly_hourly';
+        intervalId = setInterval(alarmsCallback, 1000);
+        
+        // Immediately trigger the alarm callback to start Kuku-ing if needed
+        alarmsCallback();
+    });
+
+    // If you want to allow users to change modes later:
     alarmSelector.addEventListener('change', () => {
         if (intervalId) {
             clearInterval(intervalId);
