@@ -125,7 +125,7 @@ h4 {
     color: darkred;
 }
 
-.about-section, .whatsnew-section, .todo-section {
+.about-section, .whatsnew-section {
     margin-top: 40px;
     text-align: left;
 }
