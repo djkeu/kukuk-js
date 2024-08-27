@@ -1,6 +1,3 @@
-// whatsnew.js
-
-// Function to load about information from whatsnew.json
 async function loadWhatsNewInfo() {
     try {
         const response = await fetch('whatsnew.json');
@@ -10,7 +7,6 @@ async function loadWhatsNewInfo() {
         const data = await response.json();
         const aboutSection = document.getElementById('whatsnew-section');
         
-        // Assuming about.json contains an object with key-value pairs
         for (const key in data) {
             const keyElement = document.createElement('h4');
             keyElement.textContent = key;

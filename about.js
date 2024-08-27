@@ -1,6 +1,3 @@
-// about.js
-
-// Function to load about information from about.json
 async function loadAboutInfo() {
     try {
         const response = await fetch('about.json');
@@ -10,7 +7,6 @@ async function loadAboutInfo() {
         const data = await response.json();
         const aboutSection = document.getElementById('about-section');
         
-        // Assuming about.json contains an object with key-value pairs
         for (const key in data) {
             const keyElement = document.createElement('h4');
             keyElement.textContent = key;
@@ -25,5 +21,4 @@ async function loadAboutInfo() {
     }
 }
 
-// Call the function to load about information
 loadAboutInfo();
