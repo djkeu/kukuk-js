@@ -27,7 +27,7 @@ async function loadWhatsNewInfo() {
 
 async function loadToDoInfo() {
     try {
-        const response = await fetch('whatsnew.json');
+        const response = await fetch('todo.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
