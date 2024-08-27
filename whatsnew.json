@@ -1,5 +1,5 @@
 {
     "1.2": "Added Start button to enable Kuku to start in 'Hours and minutes'-mode",
     "1.1": "Added animation of swinging pendulum to the clock image",
-    "1.0": "Working JavaScript version"
+    "1.0": "First JavaScript version of Kuku"
 }
