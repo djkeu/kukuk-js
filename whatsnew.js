@@ -1,7 +1,7 @@
 // whatsnew.js
 
 // Function to load about information from whatsnew.json
-async function loadAboutInfo() {
+async function loadWhatsNewInfo() {
     try {
         const response = await fetch('whatsnew.json');
         if (!response.ok) {
@@ -26,4 +26,4 @@ async function loadAboutInfo() {
 }
 
 // Call the function to load about information
-loadAboutInfo();
+loadWhatsNewInfo();

@@ -1,10 +1,5 @@
 {
-    "Program Name": "Kuku",
-    "Version": "1.2",
-    "Author": "Marc Kooij",
-    "E-mail": "post@djkeu.nl",
-    "Year": 2024,
-    "Description": "Always wanted to own a cuckoo clock but couldn't afford one? Well, bless the marvels of the modern world, you can have one on your phone right now. For free!",
-    "Note": "Also works on pc and laptop",
-    "Github": "https://github.com/djkeu/kukuk-js"
+    "1.2": "Added start button to enable Kuku to start in 'Hours and minutes'-mode",
+    "1.1": "Add animation of swinging pendulum to the clock image",
+    "1.0": "Working JavaScript version"
 }
