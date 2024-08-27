@@ -1,7 +1,16 @@
 # Kuku - a digital cuckoo clock for pc and phone
 
 
-## Description
+## Index
+
+- Description
+- ToDo
+- About Kuku
+- Abandoned versions
+- Continuous play
+
+
+### Description
 
 Always wanted to own a cuckoo clock but couldn't afford one?
 Well, bless the marvels of the modern world, you can get one on your phone right now. For Free!
@@ -10,7 +19,7 @@ Kukuk is an app that mimics a cuckoo-clock, written in JavaScript.
 A cuckoo sound is played once every 15 minutes and multiple times according to the hour of the day.
 
 
-## ToDo:
+### ToDo
 
 - User notification about What's new
 - Dark theme
@@ -23,7 +32,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Continuous play when not active on mobile device, see bottom of file for explanation and sample code
 
 
-## About Kuku
+### About Kuku
 
 - Author: Marc Kooij
 - Name program: Kuku
@@ -33,7 +42,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 - Netlify: https://kuku-klok.netlify.app/
 
 
-## Abandoned versions
+### Abandoned versions
 
 #### Python:
 Using Kivy framework for GUI\
@@ -44,7 +53,7 @@ Switched to Kotlin for better performance on Android\
 Github repository: https://github.com/djkeu/kukuk-kotlin
 
 
-## Continuous play
+### Continuous play
 
 Yes, it's possible to run the Kuku application in the background and allow the audio to play even when the user switches to a different app or minimizes the browser. Here's how you can achieve this:
 
