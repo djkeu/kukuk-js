@@ -8,7 +8,6 @@
 - About Kuku
 - Abandoned versions
 - Continuous play
-- Message/quote of the day 
 
 
 ### Description
