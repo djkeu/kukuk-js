@@ -30,6 +30,7 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
     - ToDo: What's new
     - ToDo: Dark theme
 - Continuous play when not active on mobile device, see bottom of file for explanation and sample code
+- Message of the day
 
 
 ### About Kuku
