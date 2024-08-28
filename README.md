@@ -22,16 +22,16 @@ A cuckoo sound is played once every 15 minutes and multiple times according to t
 
 ### ToDo
 
-- User notification about What's new
-- Dark theme
-- Show bird when kuku-ing
-- Analogue clock inside drawing
-- Menu button
-    - Done: About
-    - ToDo: What's new
-    - ToDo: Dark theme
+- User notification about What's new  ToDo:
+- Dark theme  ToDo:
+- Show bird when kuku-ing  ToDo:
+- Analogue clock inside drawing  ToDo:
+- Menu button  Done:
+    - About  Done:
+    - What's new  ToDo: 
+    - Dark theme  ToDo: 
 - Continuous play when not active on mobile device, see ./doc/continuousPlay.md for explanation and sample code
-- Message of the day
+- Message of the day  Abandoned:
 
 
 ### About Kuku
