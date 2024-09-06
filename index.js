@@ -132,33 +132,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Start alternating images every second
     imageIntervalId = setInterval(toggleImages, 1000);
 
-    // Check if the start screen has been shown before using localStorage
-    const isStartScreenShown = localStorage.getItem('startScreenShown');
+    // Handle Start Kuku button click
+    startButton.addEventListener('click', () => {
+        startScreen.style.display = 'none'; // Hide the start screen
 
-    if (!isStartScreenShown) {
-        // Handle Start Kuku button click
-        startButton.addEventListener('click', () => {
-            startScreen.style.display = 'none'; // Hide the start screen
-            localStorage.setItem('startScreenShown', 'true'); // Store that the start screen has been shown
-
-            // Set the alarm mode to "Hours and fifteen minutes" by default
-            alarmSelector.value = 'quarterly_hourly';
-            intervalId = setInterval(alarmsCallback, 1000);
-
-            // Immediately trigger the alarm callback to start Kuku-ing if needed
-            alarmsCallback();
-        });
-    } else {
-        // If the start screen has been shown before, hide it immediately
-        startScreen.style.display = 'none';
-        
         // Set the alarm mode to "Hours and fifteen minutes" by default
         alarmSelector.value = 'quarterly_hourly';
         intervalId = setInterval(alarmsCallback, 1000);
         
         // Immediately trigger the alarm callback to start Kuku-ing if needed
         alarmsCallback();
-    }
+    });
 
     // If you want to allow users to change modes later:
     alarmSelector.addEventListener('change', () => {
