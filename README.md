@@ -4,7 +4,7 @@
 ## Index
 
 - Description
-- ToDo
+- ToDo section
 - About Kuku
 - Abandoned versions
 - Continuous play
@@ -19,18 +19,18 @@ Kukuk is an app that mimics a cuckoo-clock, written in JavaScript.
 A cuckoo sound is played once every 15 minutes and multiple times according to the hour of the day.
 
 
-### ToDo
+### ToDo section
 
-- User notification about What's new  ToDo:
-- Dark theme  ToDo:
-- Show bird when kuku-ing  ToDo:
-- Analogue clock inside drawing  ToDo:
-- Menu button  Done:
-    - About  Done:
-    - What's new  ToDo: 
-    - Dark theme  ToDo: 
-- Continuous play when not active on mobile device, see ./doc/continuousPlay.md for explanation and sample code
-- Message of the day  Abandoned:
+- ToDo: User notification about What's new
+- ToDo: Dark theme
+- ToDo: Show bird when kuku-ing
+- ToDo: Analogue clock inside drawing
+- FixMe: Menu button
+    - Done: About
+    - ToDo: What's new 
+    - ToDo: Dark theme 
+- FixMe: Continuous play when not active on mobile device, see ./doc/continuousPlay.md for explanation and sample code
+- Abandoned: Message of the day
 
 
 ### About Kuku
