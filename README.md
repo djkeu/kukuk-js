@@ -1,5 +1,7 @@
 # Kuku - a digital cuckoo clock for pc and phone
 
+Android version: https://github.com/djkeu/Kukuk
+
 
 ## Index
 
@@ -7,7 +9,6 @@
 - ToDo section
 - About Kuku
 - Abandoned versions
-- Continuous play
 
 
 ### Description
